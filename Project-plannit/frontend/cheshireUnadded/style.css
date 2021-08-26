@@ -1,0 +1,38 @@
+ body {
+        background-color: #C0C0C0;
+    }
+
+#myInput {
+  background-image: url('searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  background-color: solid grey ;
+  width: 30%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 4px solid black; /* Add a grey border */
+  margin-bottom: 17px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 30%
+}
+
+#myUL li a {
+  border: 2px solid black; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: white ; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: #F804FD  ; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #01C35A ; /* Add a hover effect to all links, except for headers */
+}

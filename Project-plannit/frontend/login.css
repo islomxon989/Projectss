@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    min-height: 90%;
+    overflow: hidden;
+    background: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+	font-size: 1vw;;
+	color: #F804FD;
+}
+
+a{
+	color: #00FF75;
+}
+
+#biglogo{
+	width: 12vw;
+    height:25vh;
+	margin: 0;
+	margin-left: 19vw;
+	margin-top: 3vh;
+}
+
+.back{
+	margin-left: 1vw;
+	margin-top: 2vh;
+}
+
+.wrapper{
+	margin-left: 25vw;
+	width: 50vw;
+	height: 90vh;
+}
+
+#createacc{
+	margin:0;
+	margin-left: 17.9vw;
+	margin-top: 3vh;
+	font-size: 2vw;
+	color: #F804FD;
+}
+
+#login{
+	margin:0;
+	margin-left: 22.2vw;
+	margin-top: 3vh;
+	font-size: 2vw;
+	color: #F804FD;
+} 
+
+#slogan{
+	margin:0;
+	margin-left: 20.8vw;
+	margin-top: 1vh;
+}
+
+#signupmsgdiv{
+	height: 1.5vh;
+	width: 50vw;
+	text-align: center;
+}
+
+#loginmsgdiv{
+	height: 1.5vh;
+	width: 50vw;
+	text-align: center;
+}
+
+#signupform{
+	margin: 0;
+	margin-left: 18vw;
+	margin-top: 1vh;
+}
+
+.sfdtext{
+	margin-bottom: 2vh;
+	width: 13.7vw;
+	height: 1.5vw;
+	color: #F804FD;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.sfdlabel{
+	margin:0;
+	font-size: 1vw;
+}
+
+#snsub{
+	margin:0;
+	margin-top: 1vh;
+	margin-left:4.5vw;
+	height: 4vh;
+	width: 5vw;
+	font-size: 1vw;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 100px;
+	border-width: 0px;
+	color:black;
+}
+
+#login-direct{
+	margin:0;
+	margin-top: 2vh;
+	margin-left: 17.8vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-5;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:-5;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Home Feed</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="wide=divice-width, initial-scale=1">
+   <link rel="icon" href="images/plannit.ico">
+   <!-- Bulma CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+   <link rel="stylesheet" href="home.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+   <div class="animation-area">
+      <ul class="box-area">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+      <div class="top">
+         <input class="search_bar" type="text" id="tagsInput" placeholder="Search for tags separated by commas"
+            name="tagsInput" />
+         <button id="tagsButton" name="tagsButton">Search Tags</button>
+      </div>
+      <div id="placeholder"></div>
+      <div class="main_container">
+         <div class="logo_container">
+            <img class="logo" src="images/Plannit_updated.png" width="134" height="145" alt="logo">
+         </div>
+         <div class="menu_bar">
+            <button class="button is-rounded menu_buttons" aria-haspopup="true" aria-controls="dropdown-menu4"><a
+                  href="accountsettings">Settings</a></button>
+            <button id="upcomingButton" class="button is-rounded menu_buttons" aria-haspopup="true"
+               aria-controls="dropdown-menu4">Upcoming</button>
+            <!-- <li><a href="#">Upcoming</a></li> -->
+            <div class="dropdown is-hoverable ">
+               <!-- <div class="dropdown-trigger">
+                  <button class="button is-rounded menu_buttons" id="upcomingButton" aria-haspopup="true" aria-controls="dropdown-menu4">
+                   Upcoming
+                  </button>
+                  </div> -->
+               <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                  </div>
+               </div>
+            </div>
+            <div class="dropdown is-hoverable">
+               <div class="dropdown-trigger">
+                  <button class="button is-rounded menu_buttons" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     Date/Time
+                  </button>
+               </div>
+               <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                     <div class="dropdown-item">
+                        <h6 class="title is-4">Date</h6>
+                        <label class="label">From </label>
+                        <input id="startdatetime" name="startdatetime" type="datetime-local">
+                        <label class="label">To </label>
+                        <input id="enddatetime" name="enddatetime" type="datetime-local">
+                        <button class="button is-success is-rounded" id="datetimeButton">Apply</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="dropdown is-hoverable">
+               <div class="dropdown-trigger">
+                  <button class="button is-rounded menu_buttons" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     Size
+                  </button>
+               </div>
+               <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                     <div class="dropdown-item">
+                        <label class="label">Min: </label>
+                        <input class="input" type="text" placeholder="Enter a number" id="minimum" />
+                        <label class="label">Max: </label>
+                        <input class="input" type="text" placeholder="Enter a number" id="maximum" />
+                        <button class="button is-success is-rounded">Increasing</button>
+                        <button class="button is-success is-rounded">Decreasing</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- <li><a href="#">Location</a></li> -->
+            <div class="dropdown is-hoverable">
+               <div class="dropdown-trigger">
+                  <button class="button is-rounded menu_buttons" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     Location
+                  </button>
+               </div>
+               <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                     <div class="dropdown-item">
+                        <label class="label">ZipCode: </label>
+                        <input class="input" type="text" placeholder="5 digit code" id="zipcode" />
+                        <button class="button is-success is-rounded" id='locationButton'>Apply</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- <li><a href="#">Search with Filters</a></li> -->
+            <div class="dropdown is-hoverable">
+               <div class="dropdown-trigger">
+                  <button class="button is-rounded menu_buttons" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     Online/In-Person
+                  </button>
+                  <div class="dropdown-menu" id="dropdown-menu4" role="menu"></div>
+               </div>
+            </div>
+            <!-- <a class="cta" href="#"><button>New Post</button></a> -->
+            <a href="newpost"><button class="button is-rounded menu_buttons" aria-haspopup="true"
+                  aria-controls="dropdown-menu4"> New Post</button></a>
+            <button class="button is-rounded menu_buttons" aria-haspopup="true" aria-controls="dropdown-menu4"
+               onclick="logout()">Logout</button>
+            <div class="wrapper2">
+               <div class="fakebody">
+                  <div class="popup">
+                     <div class="popup-inside">
+                        <div class="backgrounds">
+                           <div class="background"></div>
+                           <div class="background background2"></div>
+                           <div class="background background3"></div>
+                           <div class="background background4"></div>
+                           <div class="background background5"></div>
+                           <div class="background background6"></div>
+                        </div>
+                     </div>
+                     <div class="content">
+                        <div class="content-wrapper">
+                           <h1 id="myprofile">My Profile</h1>
+                           <form id="puform" action="javascript:updateProfileInfo(this);">
+                              <label for="first">First Name</label><br />
+                              <input name="first" class="input input-field" type="text" placeholder="John">
+                              <br />
+                              <label for="last">Last Name</label><br />
+                              <input name="last" class="input input-field" type="text" placeholder="Smith">
+                              <br />
+                              <label for="age">Age</label><br />
+                              <input name="age" class="input input-field" type="number" placeholder="0">
+                              <br />
+                              <label for="datetime">Birthday</label><br />
+                              <input name="datetime" type="datetime-local">
+                              <br />
+                              <input id="newpostsub" type="submit" value="Post">
+                           </form>
+                           <p class="try-again" onclick="document.body.classList.remove('active')">Close</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="clicker" onclick="document.body.classList.add('active')">
+         <span class="clicker-text">Profile</span>
+         <div class="clicker-backgrounds">
+            <div class="clicker-circle clicker-circle1"></div>
+            <div class="clicker-circle clicker-circle2"></div>
+            <div class="clicker-circle clicker-circle3"></div>
+            <div class="clicker-circle clicker-circle4"></div>
+         </div>
+      </div>
+      <div id="wrapper">
+         <div id="postDiv">
+         </div>
+         <template>
+            <div class="post glow-on-hover">
+               <h2 class="posttitle">LF College Calculus I</h2>
+               <div class="postbody">
+                  <p class="postonline">Online</p>
+               </div>
+               <br />
+               <p class="postdatetime">When: 11/1/2022</p>
+               <br />
+               <p class="postdesc">qwerqwer</p>
+               <div class="postright">
+                  <button class="postevent" onclick="joinEvent(this)">Join Event</button>
+                  <p class="participants">3 of 10 filled</p>
+               </div>
+               <br />
+               <p class="postcontact"></p>
+            </div>
+         </template>
+      </div>
+   </div>
+   </div>
+
+   <script type="module" src="home.js"></script>
+</body>

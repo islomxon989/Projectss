@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/plannit.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <script type="module" src="login.js"></script>
+  <body onload="javascript:displaySignupSuccess();">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+  	<div class="navbar">
+      <div class="back-button">
+          <a href="index.html"><img class="back" src="images/backButton.svg" alt="Back" ondragstart="return false;"/></a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="logo-container">
+          <img id="biglogo" src="images/Plannit_updated.png" alt="Plannit Logo" ondragstart="return false;"/>
+        </div>
+        <h1 id="login">Login</h1>
+        <div id="loginmsgdiv">
+          <p id="successmsg" style="visibility: hidden; color: #00FF75;">Account Successfully Created!</p>
+        </div>
+        <form id="signupform" action="javascript:loginRequest();">
+          <label for="username"><p class="sfdlabel">Username</p></label>
+          <input class="sfdtext" type="text" id="username" name="username"><br>
+          <label for="password"><p class="sfdlabel">Password</p></label>
+          <input class="sfdtext" type="password" id="password" name="password"><br>
+          <input id="snsub" type="submit" value="Sign in">
+        </form>
+        <p id="login-direct">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    
+  </body>
+  </html>

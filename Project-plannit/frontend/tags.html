@@ -1,0 +1,36 @@
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for post tags">
+<link rel="stylesheet" href="tags.css">
+
+<ul id="myUL">
+  <li><a href="#">#Calculus I Study Group (University at Buffalo)</a></li>
+  <li><a href="#">#CSGO (Online)</a></li>
+  <li><a href="#">#Baking Class (Amherst)</a></li>
+  <li><a href="#">#Baking Competition (Orchard Park)</a></li>
+  <li><a href="#">#The Matrix Viewing Party (Online)</a></li>
+  <li><a href="#">#Alcoholics Anonymous (Downtown Buffalo)</a></li>
+  <li><a href="#">#Tennis Group (Downtown Buffalo)</a></li>
+  <li><a href="#">#Bible Study (Online)</a></li>
+  <li><a href="#">#Minecraft PvP Server (Online)</a></li>
+</ul>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
