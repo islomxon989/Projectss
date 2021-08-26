@@ -1,9 +1,0 @@
-Plannit
-
-Backend Localhost Setup:
-- Download python 3.9 (localhost build version), or match server python version with python 2.7
-- Install dependencies using the requirements.txt file and pip (pip install -r requirements.txt)
-- Make a copy of /backend/config/template.ini as /backend/config/config.ini 
-- Fill out all config parameters (Keep in mind key disrepencies with localhost vs server, contact @Xurya for further details)
-- Be on UB Campus or follow UB guidelines to connect with the VPN 
-- Run app.py from the root folder of the workspace (python backend/app.py)
