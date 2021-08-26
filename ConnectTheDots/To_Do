@@ -1,0 +1,212 @@
+--FINISHED--
+$ WASD will be used to move up, down, left, and right.$
+$ The player’s current position on the board must be indicated.$
+$ If space bar is pressed when over on ‘O’ you will begin drawing a line in that color. Pressing space
+bar again will stop drawing.
+$ SW1 will be used to pause and resume the game.
+$ When paused, the board is hidden and the player is notified that the game is paused.
+$ The time since the game was started should be displayed at the top of the board.
+$ While drawing a line, if the player crosses over an existing line, the existing line will be deleted to
+make room for the new line. Note the entire line that was crossed over is deleted.
+$ You are not allowed to cross over the color currently being drawn. If the player tries to cross over the
+line currently being draw, it should not allow them to move.
+$ If an ‘O’ that already has a line is selected, the original line will be erased
+$ The number of lines currently connecting two end points should be displayed at the top of the board.
+$ At least 16 boards must be stored in memory. 
+$ When drawing a line, the RGB LED will be the color of the line being drawn. While not drawing a
+line, the RGB LED must be off.
+
+--TO DO--
+• While pause the game board will be hidden and the player will be given the option to either restart a
+new puzzle, restart the current puzzle, or resume.
+
+--Attempting--
+• The board to be played must be selected at random.
+
+; if char is ! (black)
+; if char is # (Red)
+; if char is $ (Green)
+; if char is % (Yellow)
+;if char is  & (Blue)
+; if char is ' (Magenta)
+; if char is ( (Cyan)
+; if char is ) (White)
+Boards will be 8 wide, 7 high
+game_0:	.string	")X)X)X)X)X)X)X)X)X)X",0XD	;21 long
+	.string ")X#O%O&O! ! ! ! ! )X",0XD
+	.string ")X! ! ! 'O(O! )O! )X",0XD
+	.string ")X! ! ! ! ! ! (O! )X",0XD
+	.string ")X! ! ! ! ! ! ! ! )X",0XD
+	.string ")X! #O! ! ! )O! 'O)X",0XD
+	.string ")X$O%O! &O! ! ! $O)X",0XD
+	.string ")X! ! ! ! ! ! ! ! )X",0XD
+	.string	")X)X)X)X)X)X)X)X)X)X",0
+game_1:	.string	"!X!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X#O%O&O! ! ! ! ! !X",0XD
+	.string 	"!X! ! ! 'O(O! )O! !X",0XD
+	.string 	"!X! ! ! ! ! ! (O! !X",0XD
+	.string 	"!X! ! ! ! ! ! ! ! !X",0XD
+	.string 	"!X! #O! ! ! )O! 'O!X",0XD
+	.string 	"!X$O%O! &O! ! ! $O!X",0XD
+	.string 	"!X! ! ! ! ! ! ! ! !X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X!X",0
+
+game_2:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X$O! ! ! ! #O&O!X",0XD
+	.string 	"!X! %O$O! %O! ! !X",0XD
+	.string 	"!X! #O! ! ! ! &O!X",0XD
+	.string 	"!X! ! ! ! ! ! (O!X",0XD
+	.string 	"!X(O! ! ! ! ! 'O!X",0XD
+	.string 	"!X! ! ! ! ! ! ! !X",0XD
+	.string 	"!X)O! ! )O'O! ! !X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_3:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X(O)O! ! ! ! )O!X",0XD
+	.string 	"!X! ! ! ! ! ! #O!X",0XD
+	.string 	"!X(O! $O! ! ! &O!X",0XD
+	.string 	"!X! ! ! ! #O! ! !X",0XD
+	.string 	"!X! ! ! %O! %O! !X",0XD
+	.string 	"!X! ! ! $O! ! ! !X",0XD
+	.string 	"!X! ! ! #O'O! 'O!X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_4:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X(O! $O%O)O! ! !X",0XD
+	.string 	"!X! ! ! ! ! #O)O!X",0XD
+	.string 	"!X! (O! ! ! ! ! !X",0XD
+	.string 	"!X! ! ! ! ! &O! !X",0XD
+	.string 	"!X! %O! ! ! 'O! !X",0XD
+	.string 	"!X! ! ! &O! ! ! !X",0XD
+	.string 	"!X$O! ! 'O! ! #O!X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_5:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X! ! ! ! ! ! $O!X",0XD
+	.string 	"!X! ! ! ! ! #O$O!X",0XD
+	.string 	"!X! #O'O! %O&O! !X",0XD
+	.string 	"!X! (O'O%O)O! ! !X",0XD
+	.string 	"!X! ! )O! ! ! ! !X",0XD
+	.string 	"!X! (O&O! ! ! ! !X",0XD
+	.string 	"!X! ! ! ! ! ! ! !X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_6:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X! ! ! ! ! ! &O!X",0XD
+	.string 	"!X! %O%O$O! ! (O!X",0XD
+	.string 	"!X! ! ! ! ! )O! !X",0XD
+	.string 	"!X&O! ! ! ! )O! !X",0XD
+	.string 	"!X$O! ! ! ! ! ! !X",0XD
+	.string 	"!X#O! ! ! ! ! (O!X",0XD
+	.string 	"!X'O! 'O! ! ! #O!X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_7:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X$O%O)O(O! ! 'O!X",0XD
+	.string 	"!X! ! ! ! ! ! ! !X",0XD
+	.string 	"!X! ! ! ! ! ! ! !X",0XD
+	.string 	"!X! %O! ! ! ! ! !X",0XD
+	.string 	"!X! $O)O! ! ! ! !X",0XD
+	.string 	"!X#O! ! ! ! ! ! !X",0XD
+	.string 	"!X&O&O#O(O'O! ! !X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_8:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X! ! %O%O)O! ! !X",0XD
+	.string 	"!X! ! ! ! ! &O! !X",0XD
+	.string 	"!X! ! ! (O! )O! !X",0XD
+	.string 	"!X! ! $O! ! ! ! !X",0XD
+	.string 	"!X! $O#O! ! ! 'O!X",0XD
+	.string 	"!X! #O! &O! ! ! !X",0XD
+	.string 	"!X(O'O! ! ! ! ! !X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_9:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 	"!X$O! ! ! ! ! ! !X",0XD
+	.string 	"!X! ! %O! #O%O! !X",0XD
+	.string 	"!X! ! ! ! ! ! ! !X",0XD
+	.string 	"!X! ! ! $O! #O! !X",0XD
+	.string 	"!X! (O! ! ! &O! !X",0XD
+	.string 	"!X! ! )O! ! 'O! !X",0XD
+	.string 	"!X(O)O'O! &O! ! !X",0XD
+	.string		"!X!X!X!X!X!X!X!X!X",0
+
+game_10: .string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X'O! ! ! ! ! (O!X",0XD
+	.string 		"!X$O! $O'O(O#O#O!X",0XD
+	.string 		"!X&O! ! ! ! ! &O!X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X! ! ! ! )O%O! !X",0XD
+	.string 		"!X! ! %O! ! ! ! !X",0XD
+	.string 		"!X)O! ! ! ! ! ! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_11:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X#O#O(O$O)O! %O!X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X! $O(O! ! 'O! !X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X! ! ! ! ! ! %O!X",0XD
+	.string 		"!X! &O! ! ! ! ! !X",0XD
+	.string 		"!X! ! ! )O&O'O! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_12:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X%O! ! ! ! ! ! !X",0XD
+	.string 		"!X%O! ! ! ! ! ! !X",0XD
+	.string 		"!X)O(O(O#O$O! ! !X",0XD
+	.string 		"!X)O#O! ! ! ! ! !X",0XD
+	.string 		"!X$O! ! ! ! ! ! !X",0XD
+	.string 		"!X! ! &O'O'O! ! !X",0XD
+	.string 		"!X! ! ! ! &O! ! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_13:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X! ! %O$O! ! &O!X",0XD
+	.string 		"!X! (O! ! ! ! )O!X",0XD
+	.string 		"!X! ! %O! ! &O! !X",0XD
+	.string 		"!X(O! ! ! ! ! ! !X",0XD
+	.string 		"!X$O! ! ! ! )O#O!X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X#O'O! ! ! ! 'O!X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_14:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X! ! %O$O(O! ! !X",0XD
+	.string 		"!X! ! ! ! ! 'O(O!X",0XD
+	.string 		"!X! ! ! ! ! 'O#O!X",0XD
+	.string 		"!X! ! ! ! $O! ! !X",0XD
+	.string 		"!X! &O! ! %O! )O!X",0XD
+	.string 		"!X! #O! ! ! ! ! !X",0XD
+	.string 		"!X! ! ! &O)O! ! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_15:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X! ! #O$O! ! $O!X",0XD
+	.string 		"!X! ! ! ! ! ! #O!X",0XD
+	.string 		"!X&O! ! ! ! ! &O!X",0XD
+	.string 		"!X)O(O'O! ! %O%O!X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X! ! ! (O! ! ! !X",0XD
+	.string 		"!X! ! ! )O'O! ! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_16:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X! $O(O$O! ! ! !X",0XD
+	.string 		"!X! 'O! #O! ! ! !X",0XD
+	.string 		"!X! ! ! &O! #O! !X",0XD
+	.string 		"!X! ! ! )O&O%O! !X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X! 'O(O)O! %O! !X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
+
+game_17:	.string	"!X!X!X!X!X!X!X!X!X",0XD
+	.string 		"!X! ! ! ! ! ! ! !X",0XD
+	.string 		"!X! ! ! ! ! #O! !X",0XD
+	.string 		"!X! ! %O%O(O#O! !X",0XD
+	.string 		"!X! ! )O$O! &O! !X",0XD
+	.string 		"!X! ! )O$O&O'O! !X",0XD
+	.string 		"!X! ! ! ! ! 'O! !X",0XD
+	.string 		"!X! ! ! (O! ! ! !X",0XD
+	.string			"!X!X!X!X!X!X!X!X!X",0
