@@ -1,4 +1,4 @@
-#CONNECT THE DOTS - COLOR LINE
+# CONNECT THE DOTS - COLOR LINE
 
 
 Project Description: 
