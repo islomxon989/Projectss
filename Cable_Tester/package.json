@@ -1,0 +1,10 @@
+{
+    "name": "KGB_Cable_Tester",
+    "lockfileVersion": 2,
+    "requires": true,
+    "packages": {},
+    "dependencies": {
+        "express": "^4.17.3"
+    }
+  }
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="/Test.js"></script>
+    <style>
+        .myDiv {
+            border: 5px outset black;
+            background-color: lightgray;
+            width: 1280px;
+            height: 800px;
+        }
+
+        [type=checkbox]:checked+label {
+            color: red;
+            transform: scale(4, 4);
+        }
+
+        .button {
+            background-color: white;
+            /* Green */
+            border: 2px black;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="myDiv">
+        <img src="/kgblogo.jpeg" style="float:left;width: 140px;height: 40px;">
+        <div class="title">
+            <label style="font-size:40px;margin-left: 2%;">KGB Aviation Cable Tester</label>
+            <br>
+            <div class="ui left floated compact segment" style="margin-left: 2%;">
+                <div class="ui fitted checkbox">
+                    <input type="checkbox">
+                    <label>Walking 0s</label>
+                    <input type="checkbox">
+                    <label>Walking 1s</label>
+                    <input type="checkbox">
+                    <label>Random</label>
+                </div>
+            </div>
+            <div style="margin-left: 2%;">
+                <button class="button" onclick="continuousTest()">Continuous Test </button>
+                <button class= "button" onclick="singleTest()">Single Test     </button>
+                <button class = "button" onclick="showMappings()" >Show Mappings   </button>
+            </div>
+            <div style="margin-left: 2%; margin-top: 10%; text-align: left;">
+                <textarea id="log" rows="30" cols="150" autofocus>
+                    
+                </textarea>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+
+</body>
+
+</html>
