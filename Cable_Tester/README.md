@@ -1,9 +1,10 @@
 # KGB_Cable_Tester
 
+
 Due to the non-disclosure agreement made with KGB aviations, I cannot share any work that me and my team have done for this project.  
 
 
-Project Descriptions: 
+Project Description: 
 
 A cable tester for a custom device (DART) created by KGB Aviations which can be accessed through a secure web portal.
 
