@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Apr  7 23:23:32 2022
+# Process ID: 12376
+# Current directory: C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.runs/synth_1/ALU.vds
+# Journal file: C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.runs/synth_1\vivado.jou
+# Running On: DESKTOP-87Q54TC, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 16964 MB
+#-----------------------------------------------------------
+source ALU.tcl -notrace

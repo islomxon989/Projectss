@@ -1,0 +1,26 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_TB_behav xil_defaultlib.main_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'addr' [C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/main.v:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Instruction_mem
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.ALU_Jump
+Compiling module xil_defaultlib.Mux_Jump
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.sign_extension
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.data_mem_Mux
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_TB_behav

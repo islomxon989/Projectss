@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/TestBench.v,1649294817,verilog,,,,ALU_TB;Control_TB;MainMux_TB;PCadder_TB;Registers_TB;data_mem_TB;main_TB;sign_extension_TB,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/main.v,1649388850,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/mux.v,,main,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/ALU.v,1649379216,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/ALU_Jump.v,,ALU,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/ALU_Jump.v,1649294255,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Control.v,,ALU_Jump,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Control.v,1649283376,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Instruction_mem.v,,Control,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Instruction_mem.v,1649384165,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Mux_Jump.v,,Instruction_mem,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Mux_Jump.v,1649384577,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/PC.v,,Mux_Jump,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/PC.v,1649387016,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem.v,,PC,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem.v,1649280973,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem_Mux.v,,data_mem,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem_Mux.v,1649381914,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/main.v,,data_mem_Mux,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/mux.v,1649271907,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/registers.v,,mux,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/pc_adder.v,1649284170,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/registers.v,,pc_adder,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/registers.v,1649383349,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/sign_extension.v,,registers,,,,,,,,
+C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/sign_extension.v,1649276291,verilog,,C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/TestBench.v,,sign_extension,,,,,,,,

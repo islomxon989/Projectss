@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/ALU_Jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Instruction_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/Mux_Jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_Jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/data_mem_Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol PCin, assumed default net type wire [C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/main.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/sign_extension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extension
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sources_1/new/sign_extension.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wangd/OneDrive/Desktop/CSE490 Proj1/CSE490 Proj1.srcs/sim_1/new/TestBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_TB
+INFO: [VRFC 10-311] analyzing module MainMux_TB
+INFO: [VRFC 10-311] analyzing module Registers_TB
+INFO: [VRFC 10-311] analyzing module PCadder_TB
+INFO: [VRFC 10-311] analyzing module sign_extension_TB
+INFO: [VRFC 10-311] analyzing module data_mem_TB
+INFO: [VRFC 10-311] analyzing module Control_TB
+INFO: [VRFC 10-311] analyzing module main_TB
